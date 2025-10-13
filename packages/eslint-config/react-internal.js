@@ -1,8 +1,6 @@
-import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
-import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -14,7 +12,6 @@ import { config as baseConfig } from './base.js';
  * @type {import("eslint").Linter.Config} */
 export const config = [
   ...baseConfig,
-  js.configs.recommended,
   eslintConfigPrettier,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
@@ -31,7 +28,6 @@ export const config = [
   {
     plugins: {
       'react-hooks': pluginReactHooks,
-      // 'simple-import-sort': simpleImportSort,
     },
     settings: { react: { version: 'detect' } },
     rules: {
@@ -40,8 +36,7 @@ export const config = [
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
       // Import sorting rules
-      // 'simple-import-sort/imports': 'error',
-      // 'simple-import-sort/exports': 'error',
+   
     },
   },
 ];
