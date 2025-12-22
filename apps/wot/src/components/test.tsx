@@ -1,149 +1,12 @@
 "use client";
 
 import { Card, CardContent } from "@workspace/ui/components/card";
+import { DotPattern } from "@workspace/ui/components/dot-pattern";
+import { ScrollArea, ScrollBar } from "@workspace/ui/components/scroll-area";
 import { motion } from "framer-motion";
 import { useMemo, useState } from "react";
 
-type TankNode = {
-  id: string | number;
-  name: string;
-  tier: number;
-};
-
-type Connection = {
-  from: string;
-  to: string;
-};
-
-const nodes: TankNode[] = [
-  { id: "1", name: "MS-1", tier: 1 },
-  { id: "2", name: "BT-1", tier: 2 },
-  { id: "3", name: "BT-5", tier: 3 },
-  { id: "4", name: "T-28", tier: 4 },
-  { id: "5", name: "KV-1", tier: 5 },
-  { id: "6", name: "KV-1S", tier: 6 },
-  { id: "7", name: "IS-1", tier: 7 },
-  { id: "8", name: "IS-3", tier: 8 },
-  { id: "9", name: "Obj. 257", tier: 9 },
-  { id: "10", name: "IS-7", tier: 10 },
-  { id: "11", name: "IS-M", tier: 8 },
-  { id: "12", name: "Obj. 705", tier: 9 },
-  { id: "13", name: "Obj. 705A", tier: 10 },
-  { id: "14", name: "T-10", tier: 9 },
-  { id: "15", name: "Obj. 277", tier: 10 },
-  { id: "16", name: "T-150", tier: 6 },
-  { id: "17", name: "KV-3", tier: 7 },
-  { id: "18", name: "KV-4", tier: 8 },
-  { id: "19", name: "ST-1", tier: 9 },
-  { id: "20", name: "IS-4", tier: 10 },
-  { id: "21", name: "IS-2-II", tier: 8 },
-  { id: "22", name: "IS-3-II", tier: 9 },
-  { id: "23", name: "ST-II", tier: 10 },
-  { id: "24", name: "KV-2", tier: 6 },
-  { id: "25", name: "T-60", tier: 2 },
-  { id: "26", name: "T-70", tier: 3 },
-  { id: "27", name: "SU-76M", tier: 4 },
-  { id: "28", name: "SU-85", tier: 5 },
-  { id: "29", name: "SU-100", tier: 6 },
-  { id: "30", name: "SU-152", tier: 7 },
-  { id: "31", name: "ISU-152", tier: 8 },
-  { id: "32", name: "Obj. 704", tier: 9 },
-  { id: "33", name: "Obj. 268", tier: 10 },
-  { id: "34", name: "SU-100M1", tier: 7 },
-  { id: "35", name: "SU-101", tier: 8 },
-  { id: "36", name: "Obj. 263", tier: 9 },
-  { id: "37", name: "Obj. 268/4", tier: 10 },
-  { id: "38", name: "SU-122A", tier: 5 },
-  { id: "39", name: "SU-8", tier: 6 },
-  { id: "40", name: "S-51", tier: 7 },
-  { id: "41", name: "S-14-2", tier: 8 },
-  { id: "42", name: "212A", tier: 9 },
-  { id: "43", name: "Obj. 261", tier: 10 },
-  { id: "44", name: "BT-7", tier: 4 },
-  { id: "45", name: "T-34", tier: 5 },
-  { id: "46", name: "T-34-85", tier: 6 },
-  { id: "47", name: "T-43", tier: 7 },
-  { id: "48", name: "T-44", tier: 8 },
-  { id: "49", name: "T-54", tier: 9 },
-  { id: "50", name: "Obj. 140", tier: 10 },
-  { id: "51", name: "A-43", tier: 6 },
-  { id: "52", name: "A-44", tier: 7 },
-  { id: "53", name: "Obj. 416", tier: 8 },
-  { id: "54", name: "Obj. 430 II", tier: 9 },
-  { id: "55", name: "K-91", tier: 10 },
-  { id: "56", name: "A-20", tier: 5 },
-  { id: "57", name: "MT-25", tier: 6 },
-  { id: "58", name: "LTG", tier: 7 },
-  { id: "59", name: "LTTB", tier: 8 },
-  { id: "60", name: "T-54 Ltwt.", tier: 9 },
-  { id: "61", name: "T-100 LT.", tier: 10 },
-  { id: "62", name: "KR-1", tier: 11 },
-];
-
-const connections: Connection[] = [
-  { from: "1", to: "25" },
-  { from: "1", to: "2" },
-  { from: "2", to: "3" },
-  { from: "3", to: "4" },
-  { from: "4", to: "5" },
-  { from: "24", to: "30" },
-  { from: "5", to: "24" },
-  { from: "5", to: "6" },
-  { from: "6", to: "7" },
-  { from: "7", to: "8" },
-  { from: "8", to: "14" },
-  { from: "8", to: "9" },
-  { from: "9", to: "10" },
-  { from: "7", to: "11" },
-  { from: "11", to: "12" },
-  { from: "12", to: "13" },
-  { from: "14", to: "15" },
-  { from: "5", to: "16" },
-  { from: "16", to: "17" },
-  { from: "17", to: "18" },
-  { from: "18", to: "19" },
-  { from: "19", to: "20" },
-  { from: "17", to: "21" },
-  { from: "21", to: "22" },
-  { from: "22", to: "23" },
-  { from: "25", to: "26" },
-  { from: "26", to: "27" },
-  { from: "27", to: "38" },
-  { from: "27", to: "28" },
-  { from: "28", to: "29" },
-  { from: "29", to: "30" },
-  { from: "30", to: "31" },
-  { from: "31", to: "32" },
-  { from: "32", to: "33" },
-  { from: "29", to: "34" },
-  { from: "34", to: "35" },
-  { from: "35", to: "36" },
-  { from: "36", to: "37" },
-  { from: "38", to: "39" },
-  { from: "39", to: "40" },
-  { from: "40", to: "41" },
-  { from: "41", to: "42" },
-  { from: "42", to: "43" },
-  { from: "3", to: "44" },
-  { from: "44", to: "45" },
-  { from: "45", to: "46" },
-  { from: "46", to: "47" },
-  { from: "47", to: "48" },
-  { from: "48", to: "49" },
-  { from: "49", to: "50" },
-  { from: "45", to: "51" },
-  { from: "51", to: "52" },
-  { from: "52", to: "53" },
-  { from: "53", to: "54" },
-  { from: "54", to: "55" },
-  { from: "44", to: "56" },
-  { from: "56", to: "57" },
-  { from: "57", to: "58" },
-  { from: "58", to: "59" },
-  { from: "59", to: "60" },
-  { from: "60", to: "61" },
-  { from: "10", to: "62" },
-];
+import { connections, nodes } from "./tanks";
 
 export default function TechTree() {
   const nodeWidth = 120;
@@ -151,7 +14,7 @@ export default function TechTree() {
   const tierSpacing = 150;
   const verticalSpacing = 80;
   const [hoveredId, setHoveredId] = useState<string | null>(null);
-
+  
   const positions = useMemo(() => {
     const pos: Record<string, { x: number; y: number }> = {};
 
@@ -178,7 +41,7 @@ export default function TechTree() {
 
     const roots = nodes.filter(n => !parentMap[n.id]);
 
-    let currentY = 0;
+    let currentY = 40;
 
     function layoutNode(id: string, x: number): number {
       const children = childrenMap[id];
@@ -199,15 +62,15 @@ export default function TechTree() {
       return avgY;
     }
 
-    roots.forEach(root => layoutNode(root.id, 100));
+    roots.forEach(root => layoutNode(root.id, 40));
 
     return pos;
   }, []);
 
   const totalWidth =
-    Math.max(...Object.values(positions).map(p => p.x)) + nodeWidth + 30;
+    Math.max(...Object.values(positions).map(p => p.x)) + nodeWidth + 40;
   const totalHeight =
-    Math.max(...Object.values(positions).map(p => p.y)) + nodeHeight + 100;
+    Math.max(...Object.values(positions).map(p => p.y)) + nodeHeight + 40;
 
   // 🔹 Hàm vẽ path bo góc
   const drawPath = (
@@ -239,6 +102,7 @@ export default function TechTree() {
         strokeWidth={width}
         strokeLinecap="round"
         strokeLinejoin="round"
+        strokeDasharray={"4 1"}
         initial={{ pathLength: 0, opacity: 0 }}
         animate={{ pathLength: 1, opacity: 1 }}
         transition={{
@@ -251,7 +115,12 @@ export default function TechTree() {
   };
 
   return (
-    <div className="border-border relative overflow-auto rounded-xl border bg-neutral-950">
+    <ScrollArea
+      type="hover"
+      scrollHideDelay={1000}
+      className="h-[800px] w-[1350px] border border-dashed"
+    >
+      <DotPattern className="[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]" />
       <div
         className="relative"
         style={{ width: totalWidth, height: totalHeight }}
@@ -282,7 +151,6 @@ export default function TechTree() {
             );
           })}
         </svg>
-
         {/* 🔹 Nodes */}
         {nodes.map(node => {
           const pos = positions[node.id];
@@ -312,6 +180,7 @@ export default function TechTree() {
           );
         })}
       </div>
-    </div>
+      <ScrollBar orientation="horizontal" />
+    </ScrollArea>
   );
 }
