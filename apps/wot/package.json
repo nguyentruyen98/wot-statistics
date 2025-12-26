@@ -11,6 +11,7 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.90.12",
     "@workspace/ui": "workspace:*",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.475.0",
@@ -25,6 +26,7 @@
     "@types/node": "^20",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
+    "@workspace/api-client": "workspace:*",
     "@workspace/eslint-config": "workspace:^",
     "@workspace/typescript-config": "workspace:*",
     "prettier-plugin-tailwindcss": "^0.6.14",

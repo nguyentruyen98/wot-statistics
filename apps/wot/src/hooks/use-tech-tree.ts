@@ -1,28 +1,11 @@
-import { useEffect, useState } from "react";
-import type { TechTreeApiResponse } from "@/types/tech-tree";
-import { fetchTechTree } from "@/services/tech-tree-api";
+import { useQuery } from "@tanstack/react-query";
 
-export function useTechTree(nation: string = 'ussr', type: string = 'all') {
-  const [data, setData] = useState<TechTreeApiResponse | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<Error | null>(null);
+import { TankNations } from "@/enums/common";
+import { tankServices } from "@/services/tank-services";
 
-  useEffect(() => {
-    async function loadData() {
-      try {
-        setIsLoading(true);
-        setError(null);
-        const result = await fetchTechTree(nation, type);
-        setData(result);
-      } catch (err) {
-        setError(err as Error);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-
-    loadData();
-  }, [nation, type]);
-
-  return { data, isLoading, error };
+export function useTechTree(nation: TankNations) {
+  return useQuery({
+    queryKey: ["tech-tree"],
+    queryFn: () => tankServices.getTechTree(nation),
+  });
 }

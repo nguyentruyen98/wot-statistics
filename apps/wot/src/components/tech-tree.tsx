@@ -6,6 +6,8 @@ import { ScrollArea, ScrollBar } from "@workspace/ui/components/scroll-area";
 import { motion } from "framer-motion";
 import React, { useMemo, useState } from "react";
 
+import { TankNations } from "@/enums/common";
+import { useTechTree } from "@/hooks/use-tech-tree";
 import type { TechTreeProps } from "@/types/tech-tree";
 
 const TIER_SPACING = 150;
@@ -63,9 +65,10 @@ export default function TechTree({
       >
     );
 
-    // Build parent map với thông tin branchType
+    // Build parent map với thông tin branchType (bỏ qua skipLayout connections)
     const parentMap = connections.reduce(
-      (acc, { from, to, branchType }) => {
+      (acc, { from, to, branchType, skipLayout }) => {
+        if (skipLayout) return acc; // Bỏ qua connections chỉ để vẽ đường
         if (!acc[to]) {
           acc[to] = [];
         }
