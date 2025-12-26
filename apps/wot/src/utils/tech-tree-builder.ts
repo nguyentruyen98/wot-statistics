@@ -12,6 +12,9 @@ export type TankData = {
   is_premium: boolean;
   next_tanks: Record<string, number> | null;
   prices_xp: Record<string, number> | null;
+  images: {
+    big_icon: string;
+  };
 };
 
 export type TankDataMap = Record<string, TankData>;
@@ -126,6 +129,7 @@ export function buildNodes(
       id: tankId,
       name: tank.short_name || tank.name,
       tier: tank.tier,
+      big_icon: tank.images?.big_icon,
     }));
 }
 

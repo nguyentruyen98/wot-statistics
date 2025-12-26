@@ -5,6 +5,7 @@ export type TankNode = {
   id: string | number;
   name: string;
   tier: number;
+  big_icon?: string;
 };
 
 export type Connection = {

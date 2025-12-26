@@ -11,7 +11,7 @@ import { useTechTree } from "@/hooks/use-tech-tree";
 import type { TechTreeProps } from "@/types/tech-tree";
 
 const TIER_SPACING = 150;
-const VERTICAL_SPACING = 80;
+const VERTICAL_SPACING = 90;
 
 export default function TechTree({
   nodes = [],
@@ -20,8 +20,8 @@ export default function TechTree({
   verticalSpacing = VERTICAL_SPACING,
   isLoading = false,
 }: TechTreeProps) {
-  const nodeWidth = 120;
-  const nodeHeight = 58;
+  const nodeWidth = 126;
+  const nodeHeight = 70;
 
   // Track nodes trong nhánh chính (IS-7)
   const mainLineNodes = useMemo(() => {
@@ -290,10 +290,15 @@ export default function TechTree({
                 width: nodeWidth,
               }}
             >
-              <Card className="cursor-pointer rounded-sm py-2">
-                <CardContent className={"px-2"}>
+              <Card className="h-18 relative w-32 cursor-pointer overflow-hidden rounded-sm py-2">
+                <div
+                  className="absolute inset-0 bg-cover bg-center opacity-50"
+                  style={{
+                    backgroundImage: `url(${node.big_icon})`,
+                  }}
+                />
+                <CardContent className="relative z-10 px-2">
                   <div className="font-semibold">{node.name}</div>
-                  <div className="text-xs text-gray-400">Tier {node.tier}</div>
                 </CardContent>
               </Card>
             </motion.div>
