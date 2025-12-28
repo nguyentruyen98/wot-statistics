@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" class="tier-icon" aria-hidden="true">
+    <path fill="transparent" fill-rule="evenodd"
+        d="M24 6.5A4.5 4.5 0 0 0 19.5 2h-11A4.5 4.5 0 0 0 4 6.5v12.523a3.5 3.5 0 0 0 1.517 2.885l6.5 4.468a3.5 3.5 0 0 0 3.966 0l6.5-4.468A3.5 3.5 0 0 0 24 19.023V6.5Z"
+        class="tier-bg" clip-rule="evenodd"></path>
+    <path fill="#C0C0C0" fill-rule="evenodd"
+        d="M19.5 4h-11A2.5 2.5 0 0 0 6 6.5v8.974a1 1 0 0 0 .433.824l7 4.813a1 1 0 0 0 1.133 0l7-4.813a1 1 0 0 0 .434-.824V6.5A2.5 2.5 0 0 0 19.5 4ZM6 17.82v1.203c0 .494.243.957.65 1.236l6.5 4.47a1.5 1.5 0 0 0 1.7 0l6.5-4.47a1.5 1.5 0 0 0 .65-1.236V17.82l-7.264 4.994a1.3 1.3 0 0 1-1.473 0L6 17.82ZM9.652 16h2.267l.574-1.832h3.014L16.083 16h2.267l-2.945-8.727h-2.808L9.652 16Zm5.352-3.435-.971-3.093h-.068l-.97 3.093h2.01Z"
+        class="tier-shape" clip-rule="evenodd"></path>
+</svg>

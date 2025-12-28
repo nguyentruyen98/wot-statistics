@@ -1,0 +1,2174 @@
+{
+    "1": {
+        "is_premium": false,
+        "name": "T-34",
+        "nation": "ussr",
+        "next_tanks": {
+            "2561": 27825,
+            "12289": 29660
+        },
+        "prices_xp": {
+            "769": 11500
+        },
+        "short_name": "T-34",
+        "tank_id": 1,
+        "tier": 5,
+        "type": "mediumTank"
+    },
+    "257": {
+        "is_premium": false,
+        "name": "SU-85",
+        "nation": "ussr",
+        "next_tanks": {
+            "3585": 26500
+        },
+        "prices_xp": {
+            "6401": 12500
+        },
+        "short_name": "SU-85",
+        "tank_id": 257,
+        "tier": 5,
+        "type": "AT-SPG"
+    },
+    "513": {
+        "is_premium": false,
+        "name": "IS",
+        "nation": "ussr",
+        "next_tanks": {
+            "5377": 77000,
+            "20481": 58000
+        },
+        "prices_xp": {
+            "18689": 49480
+        },
+        "short_name": "IS",
+        "tank_id": 513,
+        "tier": 7,
+        "type": "heavyTank"
+    },
+    "769": {
+        "is_premium": false,
+        "name": "BT-7",
+        "nation": "ussr",
+        "next_tanks": {
+            "1": 11500,
+            "2049": 10200
+        },
+        "prices_xp": {
+            "23041": 3200
+        },
+        "short_name": "BT-7",
+        "tank_id": 769,
+        "tier": 4,
+        "type": "lightTank"
+    },
+    "1025": {
+        "is_premium": false,
+        "name": "BT-2",
+        "nation": "ussr",
+        "next_tanks": {
+            "23041": 1500
+        },
+        "prices_xp": {
+            "3329": 270
+        },
+        "short_name": "BT-2",
+        "tank_id": 1025,
+        "tier": 2,
+        "type": "lightTank"
+    },
+    "1537": {
+        "is_premium": false,
+        "name": "T-28",
+        "nation": "ussr",
+        "next_tanks": {
+            "11777": 13500
+        },
+        "prices_xp": {
+            "23041": 3200
+        },
+        "short_name": "T-28",
+        "tank_id": 1537,
+        "tier": 4,
+        "type": "mediumTank"
+    },
+    "1793": {
+        "is_premium": false,
+        "name": "S-51",
+        "nation": "ussr",
+        "next_tanks": {
+            "4097": 127700
+        },
+        "prices_xp": {
+            "5633": 62200
+        },
+        "short_name": "S-51",
+        "tank_id": 1793,
+        "tier": 7,
+        "type": "SPG"
+    },
+    "2049": {
+        "is_premium": false,
+        "name": "A-20",
+        "nation": "ussr",
+        "next_tanks": {
+            "16641": 32150
+        },
+        "prices_xp": {
+            "769": 10200
+        },
+        "short_name": "A-20",
+        "tank_id": 2049,
+        "tier": 5,
+        "type": "lightTank"
+    },
+    "2305": {
+        "is_premium": false,
+        "name": "SU-152",
+        "nation": "ussr",
+        "next_tanks": {
+            "7425": 75000
+        },
+        "prices_xp": {
+            "3585": 31500,
+            "10497": 93000
+        },
+        "short_name": "SU-152",
+        "tank_id": 2305,
+        "tier": 7,
+        "type": "AT-SPG"
+    },
+    "2561": {
+        "is_premium": false,
+        "name": "T-34-85",
+        "nation": "ussr",
+        "next_tanks": {
+            "6657": 53000
+        },
+        "prices_xp": {
+            "1": 27825
+        },
+        "short_name": "T-34-85",
+        "tank_id": 2561,
+        "tier": 6,
+        "type": "mediumTank"
+    },
+    "2817": {
+        "is_premium": false,
+        "name": "KV-85",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-85",
+        "tank_id": 2817,
+        "tier": 6,
+        "type": "heavyTank"
+    },
+    "3073": {
+        "is_premium": false,
+        "name": "T-46",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-46",
+        "tank_id": 3073,
+        "tier": 3,
+        "type": "lightTank"
+    },
+    "3329": {
+        "is_premium": false,
+        "name": "MS-1",
+        "nation": "ussr",
+        "next_tanks": {
+            "1025": 270,
+            "15361": 270
+        },
+        "prices_xp": null,
+        "short_name": "MS-1",
+        "tank_id": 3329,
+        "tier": 1,
+        "type": "lightTank"
+    },
+    "3585": {
+        "is_premium": false,
+        "name": "SU-100",
+        "nation": "ussr",
+        "next_tanks": {
+            "2305": 31500,
+            "10241": 48200
+        },
+        "prices_xp": {
+            "257": 26500
+        },
+        "short_name": "SU-100",
+        "tank_id": 3585,
+        "tier": 6,
+        "type": "AT-SPG"
+    },
+    "3841": {
+        "is_premium": false,
+        "name": "SU-18",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-18",
+        "tank_id": 3841,
+        "tier": 2,
+        "type": "SPG"
+    },
+    "4097": {
+        "is_premium": false,
+        "name": "SU-14-2",
+        "nation": "ussr",
+        "next_tanks": {
+            "8449": 217500
+        },
+        "prices_xp": {
+            "1793": 127700
+        },
+        "short_name": "SU-14-2",
+        "tank_id": 4097,
+        "tier": 8,
+        "type": "SPG"
+    },
+    "4353": {
+        "is_premium": false,
+        "name": "T-44",
+        "nation": "ussr",
+        "next_tanks": {
+            "7937": 142000,
+            "21505": 142950
+        },
+        "prices_xp": {
+            "6657": 93653
+        },
+        "short_name": "T-44",
+        "tank_id": 4353,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "4609": {
+        "is_premium": false,
+        "name": "T-26",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-26",
+        "tank_id": 4609,
+        "tier": 2,
+        "type": "lightTank"
+    },
+    "4865": {
+        "is_premium": false,
+        "name": "SU-5",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-5",
+        "tank_id": 4865,
+        "tier": 4,
+        "type": "SPG"
+    },
+    "5121": {
+        "is_premium": false,
+        "name": "AT-1",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "AT-1",
+        "tank_id": 5121,
+        "tier": 2,
+        "type": "AT-SPG"
+    },
+    "5377": {
+        "is_premium": false,
+        "name": "IS-3",
+        "nation": "ussr",
+        "next_tanks": {
+            "11521": 164700,
+            "19713": 142700
+        },
+        "prices_xp": {
+            "513": 77000
+        },
+        "short_name": "IS-3",
+        "tank_id": 5377,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "5633": {
+        "is_premium": false,
+        "name": "SU-8",
+        "nation": "ussr",
+        "next_tanks": {
+            "1793": 62200
+        },
+        "prices_xp": {
+            "16385": 29800
+        },
+        "short_name": "SU-8",
+        "tank_id": 5633,
+        "tier": 6,
+        "type": "SPG"
+    },
+    "5889": {
+        "is_premium": false,
+        "name": "KV-3",
+        "nation": "ussr",
+        "next_tanks": {
+            "11009": 53000,
+            "22785": 51300
+        },
+        "prices_xp": {
+            "11265": 34000
+        },
+        "short_name": "KV-3",
+        "tank_id": 5889,
+        "tier": 7,
+        "type": "heavyTank"
+    },
+    "6145": {
+        "is_premium": false,
+        "name": "IS-4",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "10753": 189000
+        },
+        "short_name": "IS-4",
+        "tank_id": 6145,
+        "tier": 10,
+        "type": "heavyTank"
+    },
+    "6401": {
+        "is_premium": false,
+        "name": "SU-76M",
+        "nation": "ussr",
+        "next_tanks": {
+            "257": 12500,
+            "16385": 12570
+        },
+        "prices_xp": {
+            "15105": 3900
+        },
+        "short_name": "SU-76M",
+        "tank_id": 6401,
+        "tier": 4,
+        "type": "AT-SPG"
+    },
+    "6657": {
+        "is_premium": false,
+        "name": "T-43",
+        "nation": "ussr",
+        "next_tanks": {
+            "4353": 93653
+        },
+        "prices_xp": {
+            "2561": 53000
+        },
+        "short_name": "T-43",
+        "tank_id": 6657,
+        "tier": 7,
+        "type": "mediumTank"
+    },
+    "6913": {
+        "is_premium": false,
+        "name": "SU-85B",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-85B",
+        "tank_id": 6913,
+        "tier": 4,
+        "type": "AT-SPG"
+    },
+    "7169": {
+        "is_premium": false,
+        "name": "IS-7",
+        "nation": "ussr",
+        "next_tanks": {
+            "67585": 325000
+        },
+        "prices_xp": {
+            "19713": 191500
+        },
+        "short_name": "IS-7",
+        "tank_id": 7169,
+        "tier": 10,
+        "type": "heavyTank"
+    },
+    "7425": {
+        "is_premium": false,
+        "name": "ISU-152",
+        "nation": "ussr",
+        "next_tanks": {
+            "8193": 192500
+        },
+        "prices_xp": {
+            "2305": 75000
+        },
+        "short_name": "ISU-152",
+        "tank_id": 7425,
+        "tier": 8,
+        "type": "AT-SPG"
+    },
+    "7681": {
+        "is_premium": false,
+        "name": "SU-26",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-26",
+        "tank_id": 7681,
+        "tier": 3,
+        "type": "SPG"
+    },
+    "7937": {
+        "is_premium": false,
+        "name": "T-54",
+        "nation": "ussr",
+        "next_tanks": {
+            "16897": 206000
+        },
+        "prices_xp": {
+            "4353": 142000
+        },
+        "short_name": "T-54",
+        "tank_id": 7937,
+        "tier": 9,
+        "type": "mediumTank"
+    },
+    "8193": {
+        "is_premium": false,
+        "name": "Object 704",
+        "nation": "ussr",
+        "next_tanks": {
+            "13569": 239000
+        },
+        "prices_xp": {
+            "7425": 192500
+        },
+        "short_name": "Obj. 704",
+        "tank_id": 8193,
+        "tier": 9,
+        "type": "AT-SPG"
+    },
+    "8449": {
+        "is_premium": false,
+        "name": "212A",
+        "nation": "ussr",
+        "next_tanks": {
+            "8705": 273000
+        },
+        "prices_xp": {
+            "4097": 217500
+        },
+        "short_name": "212A",
+        "tank_id": 8449,
+        "tier": 9,
+        "type": "SPG"
+    },
+    "8705": {
+        "is_premium": false,
+        "name": "Object 261",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "8449": 273000
+        },
+        "short_name": "Obj. 261",
+        "tank_id": 8705,
+        "tier": 10,
+        "type": "SPG"
+    },
+    "8961": {
+        "is_premium": false,
+        "name": "KV-13",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-13",
+        "tank_id": 8961,
+        "tier": 7,
+        "type": "mediumTank"
+    },
+    "9217": {
+        "is_premium": true,
+        "name": "IS-6",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "IS-6",
+        "tank_id": 9217,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "9473": {
+        "is_premium": false,
+        "name": "T-50",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-50",
+        "tank_id": 9473,
+        "tier": 5,
+        "type": "lightTank"
+    },
+    "9985": {
+        "is_premium": false,
+        "name": "SU-101",
+        "nation": "ussr",
+        "next_tanks": {
+            "21249": 152800
+        },
+        "prices_xp": {
+            "10241": 91000
+        },
+        "short_name": "SU-101",
+        "tank_id": 9985,
+        "tier": 8,
+        "type": "AT-SPG"
+    },
+    "10241": {
+        "is_premium": false,
+        "name": "SU-100M1",
+        "nation": "ussr",
+        "next_tanks": {
+            "9985": 91000
+        },
+        "prices_xp": {
+            "3585": 48200
+        },
+        "short_name": "SU-100M1",
+        "tank_id": 10241,
+        "tier": 7,
+        "type": "AT-SPG"
+    },
+    "10497": {
+        "is_premium": false,
+        "name": "KV-2",
+        "nation": "ussr",
+        "next_tanks": {
+            "2305": 93000
+        },
+        "prices_xp": {
+            "11777": 26700
+        },
+        "short_name": "KV-2",
+        "tank_id": 10497,
+        "tier": 6,
+        "type": "heavyTank"
+    },
+    "10753": {
+        "is_premium": false,
+        "name": "ST-I",
+        "nation": "ussr",
+        "next_tanks": {
+            "6145": 189000
+        },
+        "prices_xp": {
+            "11009": 166000
+        },
+        "short_name": "ST-I",
+        "tank_id": 10753,
+        "tier": 9,
+        "type": "heavyTank"
+    },
+    "11009": {
+        "is_premium": false,
+        "name": "KV-4",
+        "nation": "ussr",
+        "next_tanks": {
+            "10753": 166000
+        },
+        "prices_xp": {
+            "5889": 53000
+        },
+        "short_name": "KV-4",
+        "tank_id": 11009,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "11265": {
+        "is_premium": false,
+        "name": "T-150",
+        "nation": "ussr",
+        "next_tanks": {
+            "5889": 34000
+        },
+        "prices_xp": {
+            "11777": 24500
+        },
+        "short_name": "T-150",
+        "tank_id": 11265,
+        "tier": 6,
+        "type": "heavyTank"
+    },
+    "11521": {
+        "is_premium": false,
+        "name": "T-10",
+        "nation": "ussr",
+        "next_tanks": {
+            "22017": 220800
+        },
+        "prices_xp": {
+            "5377": 164700
+        },
+        "short_name": "T-10",
+        "tank_id": 11521,
+        "tier": 9,
+        "type": "heavyTank"
+    },
+    "11777": {
+        "is_premium": false,
+        "name": "KV-1",
+        "nation": "ussr",
+        "next_tanks": {
+            "10497": 26700,
+            "11265": 24500,
+            "18689": 25650
+        },
+        "prices_xp": {
+            "1537": 13500
+        },
+        "short_name": "KV-1",
+        "tank_id": 11777,
+        "tier": 5,
+        "type": "heavyTank"
+    },
+    "12289": {
+        "is_premium": false,
+        "name": "A-43",
+        "nation": "ussr",
+        "next_tanks": {
+            "12545": 56200
+        },
+        "prices_xp": {
+            "1": 29660
+        },
+        "short_name": "A-43",
+        "tank_id": 12289,
+        "tier": 6,
+        "type": "mediumTank"
+    },
+    "12545": {
+        "is_premium": false,
+        "name": "A-44",
+        "nation": "ussr",
+        "next_tanks": {
+            "13313": 104600
+        },
+        "prices_xp": {
+            "12289": 56200
+        },
+        "short_name": "A-44",
+        "tank_id": 12545,
+        "tier": 7,
+        "type": "mediumTank"
+    },
+    "13313": {
+        "is_premium": false,
+        "name": "Object 416",
+        "nation": "ussr",
+        "next_tanks": {
+            "17665": 150500
+        },
+        "prices_xp": {
+            "12545": 104600
+        },
+        "short_name": "Obj. 416",
+        "tank_id": 13313,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "13569": {
+        "is_premium": false,
+        "name": "Object 268",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "8193": 239000
+        },
+        "short_name": "Obj. 268",
+        "tank_id": 13569,
+        "tier": 10,
+        "type": "AT-SPG"
+    },
+    "13825": {
+        "is_premium": false,
+        "name": "T-62A",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-62A",
+        "tank_id": 13825,
+        "tier": 10,
+        "type": "mediumTank"
+    },
+    "15105": {
+        "is_premium": false,
+        "name": "T-70",
+        "nation": "ussr",
+        "next_tanks": {
+            "6401": 3900
+        },
+        "prices_xp": {
+            "15361": 1150
+        },
+        "short_name": "T-70",
+        "tank_id": 15105,
+        "tier": 3,
+        "type": "lightTank"
+    },
+    "15361": {
+        "is_premium": false,
+        "name": "T-60",
+        "nation": "ussr",
+        "next_tanks": {
+            "15105": 1150
+        },
+        "prices_xp": {
+            "3329": 270
+        },
+        "short_name": "T-60",
+        "tank_id": 15361,
+        "tier": 2,
+        "type": "lightTank"
+    },
+    "15617": {
+        "is_premium": true,
+        "name": "Object 907",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 907",
+        "tank_id": 15617,
+        "tier": 10,
+        "type": "mediumTank"
+    },
+    "15873": {
+        "is_premium": false,
+        "name": "T-80",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-80",
+        "tank_id": 15873,
+        "tier": 4,
+        "type": "lightTank"
+    },
+    "16129": {
+        "is_premium": false,
+        "name": "SU-14-1",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-14-1",
+        "tank_id": 16129,
+        "tier": 7,
+        "type": "SPG"
+    },
+    "16385": {
+        "is_premium": false,
+        "name": "SU-122A",
+        "nation": "ussr",
+        "next_tanks": {
+            "5633": 29800
+        },
+        "prices_xp": {
+            "6401": 12570
+        },
+        "short_name": "SU-122A",
+        "tank_id": 16385,
+        "tier": 5,
+        "type": "SPG"
+    },
+    "16641": {
+        "is_premium": false,
+        "name": "MT-25",
+        "nation": "ussr",
+        "next_tanks": {
+            "19457": 56200
+        },
+        "prices_xp": {
+            "2049": 32150
+        },
+        "short_name": "MT-25",
+        "tank_id": 16641,
+        "tier": 6,
+        "type": "lightTank"
+    },
+    "16897": {
+        "is_premium": false,
+        "name": "Object 140",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "7937": 206000
+        },
+        "short_name": "Obj. 140",
+        "tank_id": 16897,
+        "tier": 10,
+        "type": "mediumTank"
+    },
+    "17665": {
+        "is_premium": false,
+        "name": "Object 430 Version II",
+        "nation": "ussr",
+        "next_tanks": {
+            "21761": 252700
+        },
+        "prices_xp": {
+            "13313": 150500
+        },
+        "short_name": "Obj. 430 II",
+        "tank_id": 17665,
+        "tier": 9,
+        "type": "mediumTank"
+    },
+    "18177": {
+        "is_premium": false,
+        "name": "T-54 ltwt.",
+        "nation": "ussr",
+        "next_tanks": {
+            "19201": 279800
+        },
+        "prices_xp": {
+            "18433": 193200
+        },
+        "short_name": "T-54 ltwt.",
+        "tank_id": 18177,
+        "tier": 9,
+        "type": "lightTank"
+    },
+    "18433": {
+        "is_premium": false,
+        "name": "LTTB",
+        "nation": "ussr",
+        "next_tanks": {
+            "18177": 193200
+        },
+        "prices_xp": {
+            "19457": 96700
+        },
+        "short_name": "LTTB",
+        "tank_id": 18433,
+        "tier": 8,
+        "type": "lightTank"
+    },
+    "18689": {
+        "is_premium": false,
+        "name": "KV-1S",
+        "nation": "ussr",
+        "next_tanks": {
+            "513": 49480
+        },
+        "prices_xp": {
+            "11777": 25650
+        },
+        "short_name": "KV-1S",
+        "tank_id": 18689,
+        "tier": 6,
+        "type": "heavyTank"
+    },
+    "19201": {
+        "is_premium": false,
+        "name": "T-100 LT",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "18177": 279800
+        },
+        "short_name": "T-100 LT",
+        "tank_id": 19201,
+        "tier": 10,
+        "type": "lightTank"
+    },
+    "19457": {
+        "is_premium": false,
+        "name": "LTG",
+        "nation": "ussr",
+        "next_tanks": {
+            "18433": 96700
+        },
+        "prices_xp": {
+            "16641": 56200
+        },
+        "short_name": "LTG",
+        "tank_id": 19457,
+        "tier": 7,
+        "type": "lightTank"
+    },
+    "19713": {
+        "is_premium": false,
+        "name": "Object 257",
+        "nation": "ussr",
+        "next_tanks": {
+            "7169": 191500
+        },
+        "prices_xp": {
+            "5377": 142700
+        },
+        "short_name": "Obj. 257",
+        "tank_id": 19713,
+        "tier": 9,
+        "type": "heavyTank"
+    },
+    "19969": {
+        "is_premium": false,
+        "name": "Object 430U",
+        "nation": "ussr",
+        "next_tanks": {
+            "36609": 325000
+        },
+        "prices_xp": {
+            "21505": 287000
+        },
+        "short_name": "Obj. 430U",
+        "tank_id": 19969,
+        "tier": 10,
+        "type": "mediumTank"
+    },
+    "20225": {
+        "is_premium": false,
+        "name": "Object 268 Version 4",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "21249": 215300
+        },
+        "short_name": "Obj. 268/4",
+        "tank_id": 20225,
+        "tier": 10,
+        "type": "AT-SPG"
+    },
+    "20481": {
+        "is_premium": false,
+        "name": "IS-M",
+        "nation": "ussr",
+        "next_tanks": {
+            "20737": 144900
+        },
+        "prices_xp": {
+            "513": 58000
+        },
+        "short_name": "IS-M",
+        "tank_id": 20481,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "20737": {
+        "is_premium": false,
+        "name": "Object 705",
+        "nation": "ussr",
+        "next_tanks": {
+            "20993": 162300
+        },
+        "prices_xp": {
+            "20481": 144900
+        },
+        "short_name": "Obj. 705",
+        "tank_id": 20737,
+        "tier": 9,
+        "type": "heavyTank"
+    },
+    "20993": {
+        "is_premium": false,
+        "name": "Object 705A",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "20737": 162300
+        },
+        "short_name": "Obj. 705A",
+        "tank_id": 20993,
+        "tier": 10,
+        "type": "heavyTank"
+    },
+    "21249": {
+        "is_premium": false,
+        "name": "Object 263",
+        "nation": "ussr",
+        "next_tanks": {
+            "20225": 215300
+        },
+        "prices_xp": {
+            "9985": 152800
+        },
+        "short_name": "Obj. 263",
+        "tank_id": 21249,
+        "tier": 9,
+        "type": "AT-SPG"
+    },
+    "21505": {
+        "is_premium": false,
+        "name": "Object 430",
+        "nation": "ussr",
+        "next_tanks": {
+            "19969": 287000
+        },
+        "prices_xp": {
+            "4353": 142950
+        },
+        "short_name": "Obj. 430",
+        "tank_id": 21505,
+        "tier": 9,
+        "type": "mediumTank"
+    },
+    "21761": {
+        "is_premium": false,
+        "name": "K-91",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "17665": 252700
+        },
+        "short_name": "K-91",
+        "tank_id": 21761,
+        "tier": 10,
+        "type": "mediumTank"
+    },
+    "22017": {
+        "is_premium": false,
+        "name": "Object 277",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "11521": 220800
+        },
+        "short_name": "Obj. 277",
+        "tank_id": 22017,
+        "tier": 10,
+        "type": "heavyTank"
+    },
+    "22273": {
+        "is_premium": false,
+        "name": "ST-II",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "22529": 217000
+        },
+        "short_name": "ST-II",
+        "tank_id": 22273,
+        "tier": 10,
+        "type": "heavyTank"
+    },
+    "22529": {
+        "is_premium": false,
+        "name": "IS-3-II",
+        "nation": "ussr",
+        "next_tanks": {
+            "22273": 217000
+        },
+        "prices_xp": {
+            "22785": 165400
+        },
+        "short_name": "IS-3-II",
+        "tank_id": 22529,
+        "tier": 9,
+        "type": "heavyTank"
+    },
+    "22785": {
+        "is_premium": false,
+        "name": "IS-2-II",
+        "nation": "ussr",
+        "next_tanks": {
+            "22529": 165400
+        },
+        "prices_xp": {
+            "5889": 51300
+        },
+        "short_name": "IS-2-II",
+        "tank_id": 22785,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "23041": {
+        "is_premium": false,
+        "name": "BT-5",
+        "nation": "ussr",
+        "next_tanks": {
+            "769": 3200,
+            "1537": 3200
+        },
+        "prices_xp": {
+            "1025": 1500
+        },
+        "short_name": "BT-5",
+        "tank_id": 23041,
+        "tier": 3,
+        "type": "lightTank"
+    },
+    "27905": {
+        "is_premium": true,
+        "name": "Forest Spirit",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Forest Spirit",
+        "tank_id": 27905,
+        "tier": 8,
+        "type": "AT-SPG"
+    },
+    "29441": {
+        "is_premium": true,
+        "name": "SU-2-122",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-2-122",
+        "tank_id": 29441,
+        "tier": 5,
+        "type": "AT-SPG"
+    },
+    "29697": {
+        "is_premium": true,
+        "name": "KV-4 Turchaninov",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-4 Turch.",
+        "tank_id": 29697,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "29953": {
+        "is_premium": true,
+        "name": "LTS-85",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "LTS-85",
+        "tank_id": 29953,
+        "tier": 8,
+        "type": "lightTank"
+    },
+    "30209": {
+        "is_premium": true,
+        "name": "SU-122V",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-122V",
+        "tank_id": 30209,
+        "tier": 9,
+        "type": "AT-SPG"
+    },
+    "30465": {
+        "is_premium": true,
+        "name": "Object 752",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 752",
+        "tank_id": 30465,
+        "tier": 9,
+        "type": "heavyTank"
+    },
+    "30977": {
+        "is_premium": true,
+        "name": "K-91 Version II",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "K-91-2",
+        "tank_id": 30977,
+        "tier": 9,
+        "type": "mediumTank"
+    },
+    "31233": {
+        "is_premium": true,
+        "name": "IS-2 shielded",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "IS-2S",
+        "tank_id": 31233,
+        "tier": 7,
+        "type": "heavyTank"
+    },
+    "31745": {
+        "is_premium": true,
+        "name": "ISU-152K",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "ISU-152K",
+        "tank_id": 31745,
+        "tier": 8,
+        "type": "AT-SPG"
+    },
+    "32001": {
+        "is_premium": true,
+        "name": "Object 780",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 780",
+        "tank_id": 32001,
+        "tier": 10,
+        "type": "heavyTank"
+    },
+    "32257": {
+        "is_premium": true,
+        "name": "Object 274a",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 274a",
+        "tank_id": 32257,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "32513": {
+        "is_premium": true,
+        "name": "ST-66",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "ST-66",
+        "tank_id": 32513,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "32769": {
+        "is_premium": true,
+        "name": "K-91-PT",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "K-91-PT",
+        "tank_id": 32769,
+        "tier": 9,
+        "type": "AT-SPG"
+    },
+    "33025": {
+        "is_premium": true,
+        "name": "KV-1 shielded",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-1Sh",
+        "tank_id": 33025,
+        "tier": 5,
+        "type": "heavyTank"
+    },
+    "33281": {
+        "is_premium": true,
+        "name": "T-34 với L-11",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-34 1941",
+        "tank_id": 33281,
+        "tier": 4,
+        "type": "mediumTank"
+    },
+    "33537": {
+        "is_premium": true,
+        "name": "Object 259A",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 259A",
+        "tank_id": 33537,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "33793": {
+        "is_premium": true,
+        "name": "Object 590",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 590",
+        "tank_id": 33793,
+        "tier": 9,
+        "type": "mediumTank"
+    },
+    "34049": {
+        "is_premium": true,
+        "name": "Object 140 CL",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 140 CL",
+        "tank_id": 34049,
+        "tier": 10,
+        "type": "mediumTank"
+    },
+    "34305": {
+        "is_premium": true,
+        "name": "M4-85",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "M4-85",
+        "tank_id": 34305,
+        "tier": 5,
+        "type": "mediumTank"
+    },
+    "34561": {
+        "is_premium": true,
+        "name": "K-2",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "K-2",
+        "tank_id": 34561,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "34817": {
+        "is_premium": true,
+        "name": "Object 283",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 283",
+        "tank_id": 34817,
+        "tier": 9,
+        "type": "mediumTank"
+    },
+    "35329": {
+        "is_premium": true,
+        "name": "ST-62 Version 2",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "ST-62 Ver. 2",
+        "tank_id": 35329,
+        "tier": 10,
+        "type": "mediumTank"
+    },
+    "35841": {
+        "is_premium": true,
+        "name": "TITT Rozanov",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "TITT",
+        "tank_id": 35841,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "36097": {
+        "is_premium": true,
+        "name": "ISU-122-2",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "ISU-122-2",
+        "tank_id": 36097,
+        "tier": 8,
+        "type": "AT-SPG"
+    },
+    "36609": {
+        "is_premium": false,
+        "name": "Object 432U",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "19969": 325000
+        },
+        "short_name": "Obj. 432U",
+        "tank_id": 36609,
+        "tier": 11,
+        "type": "mediumTank"
+    },
+    "37377": {
+        "is_premium": true,
+        "name": "Obsidian",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obsidian",
+        "tank_id": 37377,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "37889": {
+        "is_premium": true,
+        "name": "KV-1SA",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-1SA",
+        "tank_id": 37889,
+        "tier": 5,
+        "type": "heavyTank"
+    },
+    "38401": {
+        "is_premium": true,
+        "name": "T-44-100 Igrovoy",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-44-100 I",
+        "tank_id": 38401,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "40961": {
+        "is_premium": true,
+        "name": "IT-3",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "IT-3",
+        "tank_id": 40961,
+        "tier": 4,
+        "type": "mediumTank"
+    },
+    "43521": {
+        "is_premium": true,
+        "name": "IS-6 FL",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "IS-6 FL",
+        "tank_id": 43521,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "43777": {
+        "is_premium": true,
+        "name": "T-54 first prototype FL",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-54 mod. 1 FL",
+        "tank_id": 43777,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "44033": {
+        "is_premium": true,
+        "name": "T-44 FL",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-44 FL",
+        "tank_id": 44033,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "44289": {
+        "is_premium": true,
+        "name": "Object 703 Version II",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "703 II (122)",
+        "tank_id": 44289,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "44545": {
+        "is_premium": true,
+        "name": "Object 777 Version II",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 777 II",
+        "tank_id": 44545,
+        "tier": 9,
+        "type": "heavyTank"
+    },
+    "44801": {
+        "is_premium": true,
+        "name": "T-116",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-116",
+        "tank_id": 44801,
+        "tier": 3,
+        "type": "lightTank"
+    },
+    "45057": {
+        "is_premium": true,
+        "name": "SU-130PM",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-130PM",
+        "tank_id": 45057,
+        "tier": 8,
+        "type": "AT-SPG"
+    },
+    "45313": {
+        "is_premium": true,
+        "name": "T-50-2",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-50-2",
+        "tank_id": 45313,
+        "tier": 6,
+        "type": "lightTank"
+    },
+    "45569": {
+        "is_premium": true,
+        "name": "LT-432",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "LT-432",
+        "tank_id": 45569,
+        "tier": 8,
+        "type": "lightTank"
+    },
+    "46593": {
+        "is_premium": true,
+        "name": "IS-2M",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "IS-2M",
+        "tank_id": 46593,
+        "tier": 7,
+        "type": "heavyTank"
+    },
+    "46849": {
+        "is_premium": true,
+        "name": "Object 279 early",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 279 (e)",
+        "tank_id": 46849,
+        "tier": 10,
+        "type": "heavyTank"
+    },
+    "47105": {
+        "is_premium": true,
+        "name": "T-34 shielded",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-34S",
+        "tank_id": 47105,
+        "tier": 5,
+        "type": "mediumTank"
+    },
+    "47361": {
+        "is_premium": true,
+        "name": "STG Guard",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Guard",
+        "tank_id": 47361,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "47617": {
+        "is_premium": true,
+        "name": "STG",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "STG",
+        "tank_id": 47617,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "47873": {
+        "is_premium": true,
+        "name": "T-29",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-29",
+        "tank_id": 47873,
+        "tier": 3,
+        "type": "mediumTank"
+    },
+    "48129": {
+        "is_premium": true,
+        "name": "Loza's M4-A2 Sherman",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Loza's M4-A2",
+        "tank_id": 48129,
+        "tier": 6,
+        "type": "mediumTank"
+    },
+    "48385": {
+        "is_premium": true,
+        "name": "T-103",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-103",
+        "tank_id": 48385,
+        "tier": 8,
+        "type": "AT-SPG"
+    },
+    "48641": {
+        "is_premium": true,
+        "name": "Object 252U Defender",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Defender",
+        "tank_id": 48641,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "49409": {
+        "is_premium": true,
+        "name": "IS-6 B",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "IS-6 B",
+        "tank_id": 49409,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "49665": {
+        "is_premium": true,
+        "name": "Object 252U",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 252U",
+        "tank_id": 49665,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "49921": {
+        "is_premium": true,
+        "name": "KV-122",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-122",
+        "tank_id": 49921,
+        "tier": 7,
+        "type": "heavyTank"
+    },
+    "50689": {
+        "is_premium": true,
+        "name": "Object 268 Version V",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 268/5",
+        "tank_id": 50689,
+        "tier": 10,
+        "type": "AT-SPG"
+    },
+    "50945": {
+        "is_premium": true,
+        "name": "T-45",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-45",
+        "tank_id": 50945,
+        "tier": 2,
+        "type": "lightTank"
+    },
+    "51201": {
+        "is_premium": true,
+        "name": "KV-220-2 Beta Test",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-220-2 T",
+        "tank_id": 51201,
+        "tier": 5,
+        "type": "heavyTank"
+    },
+    "51457": {
+        "is_premium": true,
+        "name": "Matilda IV",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Matilda IV",
+        "tank_id": 51457,
+        "tier": 5,
+        "type": "mediumTank"
+    },
+    "51713": {
+        "is_premium": true,
+        "name": "Churchill III",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Churchill III",
+        "tank_id": 51713,
+        "tier": 5,
+        "type": "heavyTank"
+    },
+    "52225": {
+        "is_premium": true,
+        "name": "BT-SV",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "BT-SV",
+        "tank_id": 52225,
+        "tier": 3,
+        "type": "lightTank"
+    },
+    "52481": {
+        "is_premium": true,
+        "name": "Valentine II",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Valentine II",
+        "tank_id": 52481,
+        "tier": 4,
+        "type": "lightTank"
+    },
+    "52737": {
+        "is_premium": true,
+        "name": "M3 Light",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "M3 Light",
+        "tank_id": 52737,
+        "tier": 3,
+        "type": "lightTank"
+    },
+    "52993": {
+        "is_premium": true,
+        "name": "A-32",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "A-32",
+        "tank_id": 52993,
+        "tier": 4,
+        "type": "mediumTank"
+    },
+    "53249": {
+        "is_premium": true,
+        "name": "KV-5",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-5",
+        "tank_id": 53249,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "53505": {
+        "is_premium": true,
+        "name": "T-127",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-127",
+        "tank_id": 53505,
+        "tier": 3,
+        "type": "lightTank"
+    },
+    "53761": {
+        "is_premium": true,
+        "name": "SU-85I",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-85I",
+        "tank_id": 53761,
+        "tier": 5,
+        "type": "AT-SPG"
+    },
+    "54017": {
+        "is_premium": true,
+        "name": "KV-220-2",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-220-2",
+        "tank_id": 54017,
+        "tier": 5,
+        "type": "heavyTank"
+    },
+    "54273": {
+        "is_premium": true,
+        "name": "SU-76I",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-76I",
+        "tank_id": 54273,
+        "tier": 3,
+        "type": "AT-SPG"
+    },
+    "54529": {
+        "is_premium": true,
+        "name": "Tetrarch",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Tetrarch",
+        "tank_id": 54529,
+        "tier": 2,
+        "type": "lightTank"
+    },
+    "54785": {
+        "is_premium": true,
+        "name": "SU-100Y",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-100Y",
+        "tank_id": 54785,
+        "tier": 6,
+        "type": "AT-SPG"
+    },
+    "55297": {
+        "is_premium": true,
+        "name": "SU-122-44",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-122-44",
+        "tank_id": 55297,
+        "tier": 7,
+        "type": "AT-SPG"
+    },
+    "55809": {
+        "is_premium": true,
+        "name": "Object 452K",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 452K",
+        "tank_id": 55809,
+        "tier": 10,
+        "type": "heavyTank"
+    },
+    "56065": {
+        "is_premium": true,
+        "name": "IS-3A Peregrine",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Peregrine",
+        "tank_id": 56065,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "56321": {
+        "is_premium": true,
+        "name": "Object 168 German",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 168G",
+        "tank_id": 56321,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "56577": {
+        "is_premium": true,
+        "name": "LTP",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "LTP",
+        "tank_id": 56577,
+        "tier": 3,
+        "type": "lightTank"
+    },
+    "57601": {
+        "is_premium": true,
+        "name": "T-54 FL",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-54 FL",
+        "tank_id": 57601,
+        "tier": 9,
+        "type": "mediumTank"
+    },
+    "58113": {
+        "is_premium": true,
+        "name": "T-34-85M",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-34-85M",
+        "tank_id": 58113,
+        "tier": 6,
+        "type": "mediumTank"
+    },
+    "58369": {
+        "is_premium": true,
+        "name": "Object 260",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 260",
+        "tank_id": 58369,
+        "tier": 10,
+        "type": "heavyTank"
+    },
+    "58625": {
+        "is_premium": true,
+        "name": "ISU-130",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "ISU-130",
+        "tank_id": 58625,
+        "tier": 8,
+        "type": "AT-SPG"
+    },
+    "58881": {
+        "is_premium": true,
+        "name": "IS-5 (Object 730)",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "IS-5",
+        "tank_id": 58881,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "59137": {
+        "is_premium": true,
+        "name": "IS-2",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "IS-2",
+        "tank_id": 59137,
+        "tier": 7,
+        "type": "heavyTank"
+    },
+    "59393": {
+        "is_premium": true,
+        "name": "T-34-85 Rudy",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Rudy USSR",
+        "tank_id": 59393,
+        "tier": 6,
+        "type": "mediumTank"
+    },
+    "59649": {
+        "is_premium": true,
+        "name": "ISU-122S",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "ISU-122S",
+        "tank_id": 59649,
+        "tier": 7,
+        "type": "AT-SPG"
+    },
+    "59905": {
+        "is_premium": true,
+        "name": "T-54 first prototype",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-54 mod. 1",
+        "tank_id": 59905,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "60161": {
+        "is_premium": true,
+        "name": "Object 244",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 244",
+        "tank_id": 60161,
+        "tier": 6,
+        "type": "heavyTank"
+    },
+    "60417": {
+        "is_premium": true,
+        "name": "IS-3A",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "IS-3A",
+        "tank_id": 60417,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "60929": {
+        "is_premium": true,
+        "name": "BT-7 artillery",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "BT-7 art.",
+        "tank_id": 60929,
+        "tier": 3,
+        "type": "lightTank"
+    },
+    "61441": {
+        "is_premium": true,
+        "name": "T-28E with F-30",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-28E F-30",
+        "tank_id": 61441,
+        "tier": 4,
+        "type": "mediumTank"
+    },
+    "61697": {
+        "is_premium": true,
+        "name": "T-22 medium",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-22 med.",
+        "tank_id": 61697,
+        "tier": 10,
+        "type": "mediumTank"
+    },
+    "61953": {
+        "is_premium": true,
+        "name": "T-44-100",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-44-100",
+        "tank_id": 61953,
+        "tier": 8,
+        "type": "mediumTank"
+    },
+    "62209": {
+        "is_premium": true,
+        "name": "KV-4 KTTS",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-4 KTTS",
+        "tank_id": 62209,
+        "tier": 8,
+        "type": "AT-SPG"
+    },
+    "62721": {
+        "is_premium": true,
+        "name": "Kirovets-1",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Kirovets-1",
+        "tank_id": 62721,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "63233": {
+        "is_premium": true,
+        "name": "KV-4 Kreslavskiy",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-4 Kresl.",
+        "tank_id": 63233,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "64001": {
+        "is_premium": true,
+        "name": "Udarniy",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Udarniy",
+        "tank_id": 64001,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "64769": {
+        "is_premium": true,
+        "name": "KV-2 (R)",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "KV-2 (R)",
+        "tank_id": 64769,
+        "tier": 6,
+        "type": "heavyTank"
+    },
+    "65537": {
+        "is_premium": true,
+        "name": "Object 701",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 701",
+        "tank_id": 65537,
+        "tier": 8,
+        "type": "heavyTank"
+    },
+    "65793": {
+        "is_premium": true,
+        "name": "Object Kust",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Kust",
+        "tank_id": 65793,
+        "tier": 8,
+        "type": "AT-SPG"
+    },
+    "66049": {
+        "is_premium": true,
+        "name": "T-115",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "T-115",
+        "tank_id": 66049,
+        "tier": 5,
+        "type": "mediumTank"
+    },
+    "66305": {
+        "is_premium": true,
+        "name": "Object 265T",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "Obj. 265T",
+        "tank_id": 66305,
+        "tier": 9,
+        "type": "heavyTank"
+    },
+    "66561": {
+        "is_premium": true,
+        "name": "SU-100I",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": null,
+        "short_name": "SU-100I",
+        "tank_id": 66561,
+        "tier": 5,
+        "type": "AT-SPG"
+    },
+    "67585": {
+        "is_premium": false,
+        "name": "KR-1",
+        "nation": "ussr",
+        "next_tanks": null,
+        "prices_xp": {
+            "7169": 325000
+        },
+        "short_name": "KR-1",
+        "tank_id": 67585,
+        "tier": 11,
+        "type": "heavyTank"
+    }
+}

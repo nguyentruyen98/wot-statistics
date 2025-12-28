@@ -7,13 +7,15 @@ import {
 import { TankNations } from "@/enums/common";
 import { tankServices } from "@/services/tank-services";
 
-import { TechTree } from "./tech-tree";
+import { ItemDemo } from "./components/ItemDemo";
+import TechTreeItem from "./components/tech-tree-item";
 
 export default async function TechTreePage({
-  nation,
+  params,
 }: {
-  nation: TankNations;
+  params: Promise<{ nation: TankNations }>;
 }) {
+  const { nation } = await params;
   const queryClient = new QueryClient();
 
   await queryClient.prefetchQuery({
@@ -22,8 +24,13 @@ export default async function TechTreePage({
   });
 
   return (
+    <div className="p-8">
+      <TechTreeItem />
+    </div>
+  );
+  return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <TechTree />
+      <TechTreeItem />
     </HydrationBoundary>
   );
 }
