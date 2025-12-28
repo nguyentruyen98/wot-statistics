@@ -9,6 +9,7 @@ import { tankServices } from "@/services/tank-services";
 
 import { ItemDemo } from "./components/ItemDemo";
 import TechTreeItem from "./components/tech-tree-item";
+import { TechTree } from "./tech-tree";
 
 export default async function TechTreePage({
   params,
@@ -24,13 +25,8 @@ export default async function TechTreePage({
   });
 
   return (
-    <div className="p-8">
-      <TechTreeItem />
-    </div>
-  );
-  return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <TechTreeItem />
+      <TechTree />
     </HydrationBoundary>
   );
 }
