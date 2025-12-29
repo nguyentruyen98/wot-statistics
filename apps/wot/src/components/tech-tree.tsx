@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import React, { useMemo, useState } from "react";
 
 import TechTreeItem from "@/app/tech-tree/[nation]/components/tech-tree-item";
+import { TANK_TIERS_ROMAN } from "@/constants/common";
 import { TankNations } from "@/enums/common";
 import { useTechTree } from "@/hooks/use-tech-tree";
 import type { TechTreeProps } from "@/types/tech-tree";
@@ -176,19 +177,7 @@ export default function TechTree({
         style={{ width: totalWidth, height: totalHeight }}
       >
         {/* Tier numbers header with Roman numerals */}
-        {[
-          "I",
-          "II",
-          "III",
-          "IV",
-          "V",
-          "VI",
-          "VII",
-          "VIII",
-          "IX",
-          "X",
-          "XI",
-        ].map((roman, index) => (
+        {TANK_TIERS_ROMAN.map((roman, index) => (
           <div
             key={index}
             className="absolute text-center text-lg font-bold"
