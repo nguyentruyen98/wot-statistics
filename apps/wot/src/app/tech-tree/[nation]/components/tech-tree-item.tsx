@@ -12,18 +12,33 @@ import {
 } from "@workspace/ui/components/tooltip";
 import React from "react";
 
-export default function TechTreeItem() {
+import { toRoman } from "@/utils/common";
+
+type TechTreeItemProps = {
+  name: string;
+  url?: string;
+  tier: number;
+};
+
+export default function TechTreeItem({
+  name,
+  url = "",
+  tier,
+}: TechTreeItemProps) {
   return (
     <Tooltip>
       <TooltipTrigger asChild>
-        <Card className="relative w-full max-w-40 cursor-pointer">
-          <div className="absolute inset-0 bg-[url('http:\/\/api.worldoftanks.asia\/static\/2.77.0\/wot\/encyclopedia\/vehicle\/ussr-R228_KR_1.png')] bg-cover bg-center opacity-50" />
-          <CardHeader className="z-10 flex items-center justify-between px-4">
+        <Card className="relative w-full max-w-48 cursor-pointer">
+          <div
+            className={`absolute inset-0 bg-cover bg-center opacity-40`}
+            style={{ backgroundImage: `url('${url}')` }}
+          />
+          <CardHeader className="z-10 flex items-center justify-between px-2">
             <div className="flex flex-row items-center gap-2">
               <HeavyTankIcon width={12} />
-              <CardDescription>XI</CardDescription>
+              <CardDescription>{toRoman(tier)}</CardDescription>
             </div>
-            <CardTitle>KR-1</CardTitle>
+            <CardTitle>{name}</CardTitle>
           </CardHeader>
         </Card>
       </TooltipTrigger>
@@ -32,5 +47,4 @@ export default function TechTreeItem() {
       </TooltipContent>
     </Tooltip>
   );
- 
 }

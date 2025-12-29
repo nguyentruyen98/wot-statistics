@@ -6,6 +6,7 @@ import { ScrollArea, ScrollBar } from "@workspace/ui/components/scroll-area";
 import { motion } from "framer-motion";
 import React, { useMemo, useState } from "react";
 
+import TechTreeItem from "@/app/tech-tree/[nation]/components/tech-tree-item";
 import { TankNations } from "@/enums/common";
 import { useTechTree } from "@/hooks/use-tech-tree";
 import type { TechTreeProps } from "@/types/tech-tree";
@@ -21,7 +22,7 @@ export default function TechTree({
   isLoading = false,
 }: TechTreeProps) {
   const nodeWidth = 126;
-  const nodeHeight = 70;
+  const nodeHeight = 52;
 
   // Track nodes trong nhánh chính (IS-7)
   const mainLineNodes = useMemo(() => {
@@ -169,7 +170,7 @@ export default function TechTree({
       scrollHideDelay={1000}
       className="h-[800px] w-[1350px] border border-dashed"
     >
-      <DotPattern />
+      {/* <DotPattern /> */}
       <div
         className="relative"
         style={{ width: totalWidth, height: totalHeight }}
@@ -264,7 +265,7 @@ export default function TechTree({
                   from.y + nodeHeight / 2,
                   to.x,
                   to.y + nodeHeight / 2,
-                  "#fff",
+                  "#303030",
                   2
                 )}
               </g>
@@ -290,17 +291,11 @@ export default function TechTree({
                 width: nodeWidth,
               }}
             >
-              <Card className="h-18 relative w-32 cursor-pointer overflow-hidden rounded-sm py-2">
-                <div
-                  className="absolute inset-0 bg-cover bg-center opacity-50"
-                  style={{
-                    backgroundImage: `url(${node.big_icon})`,
-                  }}
-                />
-                <CardContent className="relative z-10 px-2">
-                  <div className="font-semibold">{node.name}</div>
-                </CardContent>
-              </Card>
+              <TechTreeItem
+                name={node.name}
+                url={node.big_icon}
+                tier={node.tier}
+              />
             </motion.div>
           );
         })}
@@ -320,7 +315,7 @@ const drawPath = (
   width: number
 ) => {
   const midX = (fromX + toX) / 2;
-  const radius = 4;
+  const radius = 0;
   const path = `
       M ${fromX} ${fromY}
       L ${midX - radius} ${fromY}
