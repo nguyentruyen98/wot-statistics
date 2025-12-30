@@ -1,10 +1,10 @@
 import { apiClient } from "@/api/client";
-import { TankNations } from "@/enums/common";
+import { Nations } from "@/enums/common";
 
 export class TankServices {
   private readonly baseUrl = "api/tanks";
 
-  async getTechTree(nation: TankNations): Promise<any> {
+  async getTechTree(nation: Nations): Promise<any> {
     return apiClient.get(`${this.baseUrl}/${nation}`);
   }
 }

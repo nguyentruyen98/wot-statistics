@@ -12,18 +12,22 @@ import {
 } from "@workspace/ui/components/tooltip";
 import React from "react";
 
+import TankTypeIcon from "@/components/tank-type-icon";
+import { TankTypes } from "@/enums/tank";
 import { toRoman } from "@/utils/common";
 
 type TechTreeItemProps = {
   name: string;
   url?: string;
   tier: number;
+  type: TankTypes;
 };
 
 export default function TechTreeItem({
   name,
   url = "",
   tier,
+  type,
 }: TechTreeItemProps) {
   return (
     <Tooltip>
@@ -35,7 +39,7 @@ export default function TechTreeItem({
           />
           <CardHeader className="z-10 flex items-center justify-between px-2">
             <div className="flex flex-row items-center gap-2">
-              <HeavyTankIcon width={12} />
+              <TankTypeIcon type={type} />
               <CardDescription>{toRoman(tier)}</CardDescription>
             </div>
             <CardTitle>{name}</CardTitle>

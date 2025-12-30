@@ -4,17 +4,39 @@ import { Card, CardContent } from "@workspace/ui/components/card";
 import { DotPattern } from "@workspace/ui/components/dot-pattern";
 import { ScrollArea, ScrollBar } from "@workspace/ui/components/scroll-area";
 import { motion } from "framer-motion";
+import { div } from "framer-motion/client";
 import React, { useMemo, useState } from "react";
 
 import TechTreeItem from "@/app/tech-tree/[nation]/components/tech-tree-item";
 import { TANK_TIERS_ROMAN } from "@/constants/common";
-import { TankNations } from "@/enums/common";
+import { Nations } from "@/enums/common";
 import { useTechTree } from "@/hooks/use-tech-tree";
 import type { TechTreeProps } from "@/types/tech-tree";
 
 const TIER_SPACING = 150;
-const VERTICAL_SPACING = 90;
+const VERTICAL_SPACING = 75;
 
+/**
+ * `TechTree` is a React component that renders a dynamic, interactive technology tree (tech tree) visualization.
+ * It displays nodes (such as vehicles or technologies) and their connections, supporting main lines, branches, and custom layout logic.
+ * The component automatically arranges nodes by tiers and vertical spacing, highlights the main line, and draws connections between nodes.
+ *
+ * @component
+ * @param {TechTreeProps} props - The properties for the TechTree component.
+ * @param {Array<Node>} props.nodes - The list of nodes to display in the tech tree.
+ * @param {Array<Connection>} props.connections - The list of connections (edges) between nodes, including branch type and layout options.
+ * @param {number} [props.tierSpacing] - The horizontal spacing between tiers (columns).
+ * @param {number} [props.verticalSpacing] - The vertical spacing between nodes (rows).
+ * @param {boolean} [props.isLoading] - Whether the tech tree is in a loading state.
+ *
+ * @returns {JSX.Element} The rendered tech tree visualization.
+ *
+ * @example
+ * <TechTree
+ *   nodes={[{ id: 1, name: "Tank A", ... }]}
+ *   connections={[{ from: 1, to: 2, branchType: "main" }]}
+ * />
+ */
 export default function TechTree({
   nodes = [],
   connections = [],
@@ -166,11 +188,7 @@ export default function TechTree({
     Math.max(...Object.values(positions).map(p => p.y)) + nodeHeight + 40;
 
   return (
-    <ScrollArea
-      type="hover"
-      scrollHideDelay={1000}
-      className="h-[800px] w-[1350px] border border-dashed"
-    >
+    <ScrollArea type="hover" className="h-2/3 w-3/4 border border-dashed">
       {/* <DotPattern /> */}
       <div
         className="relative"
@@ -284,6 +302,7 @@ export default function TechTree({
                 name={node.name}
                 url={node.big_icon}
                 tier={node.tier}
+                type={node.type}
               />
             </motion.div>
           );

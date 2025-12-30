@@ -130,6 +130,7 @@ export function buildNodes(
       name: tank.short_name || tank.name,
       tier: tank.tier,
       big_icon: tank.images?.big_icon,
+      type: tank.type,
     }));
 }
 

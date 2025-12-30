@@ -1,3 +1,4 @@
+import { TankTypes } from "@/enums/tank";
 import { BranchType } from "@/enums/tech-tree";
 
 // Types cho Tech Tree
@@ -6,6 +7,7 @@ export type TankNode = {
   name: string;
   tier: number;
   big_icon?: string;
+  type: TankTypes;
 };
 
 export type Connection = {
