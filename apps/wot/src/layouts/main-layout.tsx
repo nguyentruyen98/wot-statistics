@@ -12,7 +12,7 @@ const MainLayout = ({
   return (
     <ScrollArea className="relative h-svh" scrollHideDelay={3000} type="scroll">
       <MainLayoutHeader />
-      <main className="relative min-h-screen px-4 pb-4 pt-20">{children}</main>
+      <main className="relative min-h-screen pt-16">{children}</main>
       <MainLayoutFooter />
       <ScrollBar orientation="vertical" className="z-100" />
     </ScrollArea>

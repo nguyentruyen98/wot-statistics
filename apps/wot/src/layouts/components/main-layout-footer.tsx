@@ -11,7 +11,7 @@ const MainLayoutFooter = () => {
             data-width="16"
             data-stroke-width="1.5"
           ></span>
-          <span className="font-display text-sm font-bold uppercase tracking-tight text-zinc-500">
+          <span className="font-display text-lg font-bold font-rajdhani uppercase tracking-tight text-zinc-500">
             Tankopedia
           </span>
         </div>

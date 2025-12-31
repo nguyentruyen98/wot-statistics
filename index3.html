@@ -1,0 +1,349 @@
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object 430U | Tankopedia</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Rajdhani:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Rajdhani', 'sans-serif'],
+                    },
+                    colors: {
+                        amber: {
+                            450: '#F59E0B', 
+                            500: '#f59e0b',
+                        },
+                        zinc: {
+                            850: '#1f2025',
+                            925: '#101012', 
+                            950: '#09090b',
+                        }
+                    },
+                    letterSpacing: {
+                        tightest: '-0.05em',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #09090b; }
+        ::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #52525b; }
+        
+        .bg-noise {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+        
+        /* Radial gradient for the vignette effect */
+        .vignette {
+            background: radial-gradient(circle at 40% 50%, transparent 20%, rgba(9,9,11,0.8) 80%, rgba(9,9,11,1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-300 font-sans antialiased overflow-x-hidden selection:bg-amber-500/30 selection:text-amber-200 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 border-b border-white/5 bg-zinc-950/80 backdrop-blur-md supports-[backdrop-filter]:bg-zinc-950/60">
+        <div class="max-w-[1600px] mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2 group cursor-pointer">
+                    <div class="relative w-8 h-8 flex items-center justify-center bg-zinc-900 border border-white/10 rounded-sm group-hover:border-amber-500/50 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="18" height="18" viewBox="0 0 24 24" data-icon="lucide:crosshair" data-width="18" data-stroke-width="1.5" class="iconify text-amber-500 iconify--lucide"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M22 12h-4M6 12H2m10-6V2m0 20v-4"></path></g></svg>
+                    </div>
+                    <span class="font-display font-semibold text-lg tracking-tight text-white group-hover:text-amber-500 transition-colors uppercase">Tankopedia</span>
+                </div>
+
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#" class="text-xs font-medium text-white transition-colors tracking-wide">ARMORY</a>
+                    <a href="#" class="text-xs font-medium text-zinc-400 hover:text-white transition-colors tracking-wide">FACTIONS</a>
+                    <a href="#" class="text-xs font-medium text-zinc-400 hover:text-white transition-colors tracking-wide">WARMAPS</a>
+                    <a href="#" class="text-xs font-medium text-zinc-400 hover:text-white transition-colors tracking-wide">LEADERBOARD</a>
+                </nav>
+
+                <div class="flex items-center gap-4">
+                    <button class="hidden md:flex items-center gap-2 px-4 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 text-[10px] font-semibold text-white uppercase tracking-wider rounded-sm transition-all duration-300 group">
+                        <span>Login</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform"><path d="m9 18 6-6-6-6"></path></svg>
+                    </button>
+                    <button class="md:hidden p-2 text-zinc-400 hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="relative flex-grow w-full pt-16 flex flex-col">
+        
+        <!-- Background Layer -->
+        <div class="absolute inset-0 z-0">
+             <!-- Tank Background Image -->
+             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1599368380582-747249c6692b?q=80&amp;w=2670&amp;auto=format&amp;fit=crop')] bg-cover bg-[center_top_30%] bg-no-repeat"></div>
+             <!-- Overlays for readability -->
+             <div class="absolute inset-0 bg-zinc-950/30"></div>
+             <div class="absolute inset-0 vignette"></div>
+             <div class="absolute inset-0 bg-gradient-to-r from-zinc-950/80 via-transparent to-zinc-950/90 lg:to-zinc-950"></div>
+             <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent"></div>
+             <div class="absolute inset-0 bg-noise opacity-30 pointer-events-none"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative z-10 w-full h-full max-w-[1600px] mx-auto px-6 lg:px-8 flex flex-col flex-grow">
+            
+            <!-- Breadcrumbs -->
+            <div class="flex items-center gap-2 mt-8 text-[10px] font-medium tracking-widest text-zinc-500 uppercase">
+                <a href="#" class="hover:text-white transition-colors">Home</a>
+                <span>/</span>
+                <a href="#" class="hover:text-white transition-colors">Tankopedia</a>
+                <span>/</span>
+                <a href="#" class="hover:text-white transition-colors">U.S.S.R.</a>
+                <span>/</span>
+                <a href="#" class="hover:text-white transition-colors">Medium Tanks</a>
+                <span>/</span>
+                <span class="text-zinc-300">X</span>
+            </div>
+
+            <!-- Header Row -->
+            <div class="mt-4 flex flex-col md:flex-row md:items-end gap-6 mb-8">
+                <div>
+                    <h1 class="font-display text-6xl md:text-7xl font-semibold text-white tracking-tight leading-none uppercase drop-shadow-2xl">
+                        Object 430U
+                    </h1>
+                </div>
+                
+                <div class="flex items-center gap-4 pb-2">
+                    <!-- Nation Flag -->
+                    <div class="w-10 h-6 bg-red-800 rounded-sm flex items-center justify-center border border-white/10 shadow-lg relative overflow-hidden">
+                        <div class="text-amber-400">
+                             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent"></div>
+                    </div>
+
+                    <!-- Add to Comparison -->
+                    <button class="flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/40 transition-all text-[10px] font-semibold text-zinc-300 uppercase tracking-wider backdrop-blur-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="M12 8v8"></path></svg>
+                        Add to Comparison
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Layout Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 flex-grow">
+                
+                <!-- Left Column (Visual Spacer) -->
+                <div class="lg:col-span-7 relative min-h-[40vh] lg:min-h-auto group">
+                    <!-- Interactive Hotspots on the invisible tank -->
+                    <div class="absolute top-[40%] left-[50%] w-6 h-6 border border-white/30 rounded-full flex items-center justify-center cursor-help opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="w-1 h-1 bg-white rounded-full"></div>
+                        <div class="absolute top-full mt-2 w-32 bg-black/80 backdrop-blur text-[10px] p-2 rounded border border-white/10 text-center text-zinc-300 pointer-events-none">
+                            160mm Turret Armor
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column (Info Panel) -->
+                <div class="lg:col-span-5 flex flex-col justify-center pb-12 lg:pb-32">
+                    <div class="space-y-8">
+                        
+                        <!-- Historical Ref -->
+                        <div>
+                            <h2 class="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-3 flex items-center gap-2">
+                                <span class="w-1 h-4 bg-amber-500 rounded-sm"></span>
+                                Historical Reference
+                            </h2>
+                            <p class="text-sm text-zinc-300 leading-relaxed border-l border-white/10 pl-4">
+                                The Object 430U is a version of the Object 430 medium tank with a rear placement of the engine-transmission compartment. This version was to feature a transverse placement of the engine and two planetary transmissions. This technical solution allowed for extending the interior space and decreasing the vehicle's weight. Developed from 1953 through 1957 to replace the T-54, but work was discontinued in favor of the Object 432 in 1961.
+                            </p>
+                        </div>
+
+                        <!-- Attributes Grid -->
+                        <div class="grid grid-cols-2 gap-y-8 gap-x-4 border-t border-white/5 pt-8">
+                            
+                            <!-- Nation -->
+                            <div class="group">
+                                <div class="flex items-center gap-2 text-zinc-400 mb-1 group-hover:text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <span class="text-[10px] font-bold uppercase tracking-widest">Nation</span>
+                                </div>
+                                <div class="text-lg font-display font-medium text-white">U.S.S.R.</div>
+                            </div>
+
+                            <!-- Tier -->
+                            <div class="group">
+                                <div class="flex items-center gap-2 text-zinc-400 mb-1 group-hover:text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.78 4.78 4 4 0 0 1-6.74 0 4 4 0 0 1-4.78-4.78 4 4 0 0 1 0-6.74Z"></path></svg>
+                                    <span class="text-[10px] font-bold uppercase tracking-widest">Tier</span>
+                                </div>
+                                <div class="text-lg font-display font-medium text-white">X <span class="text-sm text-zinc-500 font-sans ml-1">(Elite)</span></div>
+                            </div>
+
+                            <!-- Type -->
+                            <div class="group">
+                                <div class="flex items-center gap-2 text-zinc-400 mb-1 group-hover:text-white transition-colors">
+                                    <div class="w-3 h-3 rotate-45 border border-current"></div>
+                                    <span class="text-[10px] font-bold uppercase tracking-widest">Type</span>
+                                </div>
+                                <div class="text-lg font-display font-medium text-white">Medium Tank</div>
+                            </div>
+
+                            <!-- Cost -->
+                            <div class="group">
+                                <div class="flex items-center gap-2 text-zinc-400 mb-1 group-hover:text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"></circle><path d="M18.09 10.37A6 6 0 1 1 10.34 18"></path><path d="M7 6h1v4"></path><path d="m16.71 13.88.7.71-2.82 2.82"></path></svg>
+                                    <span class="text-[10px] font-bold uppercase tracking-widest">Cost</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <div class="text-sm font-display font-medium text-zinc-300 flex items-center gap-1">
+                                        <span class="text-zinc-400">Credits:</span> 6,100,000
+                                    </div>
+                                    <div class="text-sm font-display font-medium text-zinc-300 flex items-center gap-1">
+                                        <span class="text-zinc-400">XP:</span> 287,000
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- Role -->
+                             <div class="col-span-2 mt-2 pt-6 border-t border-white/5">
+                                <div class="flex items-center gap-2 text-zinc-400 mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path><path d="m9 12 2 2 4-4"></path></svg>
+                                    <span class="text-[10px] font-bold uppercase tracking-widest">Combat Role</span>
+                                </div>
+                                <div class="text-lg font-display font-medium text-white flex items-center gap-2">
+                                    Assault Medium Tank
+                                    <span class="px-1.5 py-0.5 rounded bg-zinc-800 border border-white/10 text-[10px] text-zinc-400 font-sans tracking-tight">BRAWLER</span>
+                                </div>
+                                <p class="text-xs text-zinc-500 mt-2">Excels in close-quarters combat with high durability.</p>
+                            </div>
+                        </div>
+
+                         <!-- Featured In -->
+                         <div class="mt-8 pt-8 border-t border-white/5">
+                            <div class="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-2">Featured In</div>
+                            <a href="#" class="inline-flex items-center gap-2 px-3 py-2 bg-zinc-900/50 hover:bg-zinc-800 border border-white/5 hover:border-amber-500/30 rounded transition-colors group">
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-500 group-hover:bg-amber-500 transition-colors"></span>
+                                <span class="text-xs font-medium text-zinc-300 group-hover:text-white">Fun Tanks (Tier VIII-X)</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-600 group-hover:text-white ml-auto"><path d="m9 18 6-6-6-6"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Crew Strip (Sticky Bottom) -->
+        <div class="w-full bg-zinc-950/90 border-t border-white/5 backdrop-blur-md z-30">
+            <div class="max-w-[1600px] mx-auto px-6 lg:px-8 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-8 overflow-x-auto no-scrollbar">
+                        <div class="flex-shrink-0">
+                            <h3 class="text-sm font-display font-bold text-white uppercase tracking-wider mb-0.5">Crew</h3>
+                            <span class="text-[10px] text-zinc-500 uppercase tracking-widest">Proficiency 100%</span>
+                        </div>
+                        
+                        <!-- Divider -->
+                        <div class="w-px h-8 bg-white/10 mx-2"></div>
+
+                        <!-- Crew Members -->
+                        <div class="flex items-center gap-6">
+                            <!-- Commander -->
+                            <div class="flex items-center gap-3 group cursor-pointer">
+                                <div class="relative w-10 h-10 rounded bg-zinc-800 overflow-hidden border border-white/10 group-hover:border-amber-500/50 transition-colors">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Commander" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                                    <div class="absolute bottom-0 right-0 w-3 h-3 bg-zinc-900 border border-zinc-700 flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-amber-500"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"></path><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"></path><path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4z"></path></svg>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest group-hover:text-amber-500 transition-colors">Commander</span>
+                                    <span class="text-xs font-medium text-white">Sgt. Volkov</span>
+                                </div>
+                            </div>
+
+                            <!-- Gunner -->
+                            <div class="flex items-center gap-3 group cursor-pointer">
+                                <div class="relative w-10 h-10 rounded bg-zinc-800 overflow-hidden border border-white/10 group-hover:border-amber-500/50 transition-colors">
+                                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Gunner" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                                    <div class="absolute bottom-0 right-0 w-3 h-3 bg-zinc-900 border border-zinc-700 flex items-center justify-center">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-amber-500"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest group-hover:text-amber-500 transition-colors">Gunner</span>
+                                    <span class="text-xs font-medium text-white">Cpl. Ivanov</span>
+                                </div>
+                            </div>
+
+                            <!-- Driver -->
+                            <div class="flex items-center gap-3 group cursor-pointer">
+                                <div class="relative w-10 h-10 rounded bg-zinc-800 overflow-hidden border border-white/10 group-hover:border-amber-500/50 transition-colors">
+                                    <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Driver" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                                    <div class="absolute bottom-0 right-0 w-3 h-3 bg-zinc-900 border border-zinc-700 flex items-center justify-center">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-amber-500"><circle cx="12" cy="12" r="10"></circle><path d="m10 8 4 4-4 4"></path></svg>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest group-hover:text-amber-500 transition-colors">Driver</span>
+                                    <span class="text-xs font-medium text-white">Pvt. Petrov</span>
+                                </div>
+                            </div>
+
+                            <!-- Loader -->
+                            <div class="flex items-center gap-3 group cursor-pointer">
+                                <div class="relative w-10 h-10 rounded bg-zinc-800 overflow-hidden border border-white/10 group-hover:border-amber-500/50 transition-colors">
+                                    <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Loader" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                                    <div class="absolute bottom-0 right-0 w-3 h-3 bg-zinc-900 border border-zinc-700 flex items-center justify-center">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-amber-500"><path d="m19 11-8-8-8.6 8.6a2 2 0 0 0 0 2.8l5.2 5.2c.8.8 2 .8 2.8 0L19 11Z"></path><path d="m5 2 5 5"></path><path d="M2 13h15"></path><path d="M22 20a2 2 0 1 1-4 0c0-1.6 1.7-2.4 2-4 .3 1.6 2 2.4 2 4Z"></path></svg>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest group-hover:text-amber-500 transition-colors">Loader</span>
+                                    <span class="text-xs font-medium text-white">Pvt. Sokolov</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action -->
+                    <div class="hidden md:block">
+                        <button class="flex items-center gap-2 px-4 py-2 bg-amber-500 hover:bg-amber-400 text-zinc-950 text-xs font-bold uppercase tracking-wider rounded transition-all">
+                            Manage Crew
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 border-t border-white/5 py-8">
+        <div class="max-w-[1600px] mx-auto px-6 lg:px-8 flex flex-col md:flex-row gap-6 justify-between items-center">
+            <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 24 24" data-icon="lucide:crosshair" data-width="16" data-stroke-width="1.5" class="iconify text-zinc-600 iconify--lucide"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M22 12h-4M6 12H2m10-6V2m0 20v-4"></path></g></svg>
+                <span class="font-display font-bold text-zinc-500 tracking-tight text-sm uppercase">Tankopedia</span>
+            </div>
+            <p class="text-zinc-600 text-[10px] text-center md:text-right uppercase tracking-widest">
+                Classified Intelligence / Level 4 Clearance
+            </p>
+        </div>
+    </footer>
+
+</body></html>
