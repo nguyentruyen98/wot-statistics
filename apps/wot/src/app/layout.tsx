@@ -1,13 +1,29 @@
 import "@/styles/global.css";
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Outfit } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  JetBrains_Mono,
+  Outfit,
+  Rajdhani,
+} from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 
+import MainLayout from "@/layouts/main-layout";
 import { QueryProvider } from "@/providers/query-provider";
 import { ThemeProvider } from "@/providers/theme-provider";
 
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-sans" });
+const rajdhani = Rajdhani({
+  subsets: ["latin"],
+  variable: "--font-rajdhani",
+  weight: ["300", "400", "500", "600", "700"],
+});
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jet-brains-mono",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +49,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={outfit.variable}>
       <body
         suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${rajdhani.variable} ${jetBrainsMono.variable} font-sans antialiased`}
       >
         <QueryProvider>
           <NextIntlClientProvider>
@@ -43,7 +59,7 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-              <div className="flex h-screen">{children}</div>
+              <MainLayout>{children}</MainLayout>
             </ThemeProvider>
           </NextIntlClientProvider>
         </QueryProvider>
