@@ -300,7 +300,7 @@ export default function TechTree({
             >
               <TechTreeItem
                 name={node.name}
-                url={node.big_icon}
+                url={node.big_icon_url}
                 tier={node.tier}
                 type={node.type}
               />

@@ -1,14 +1,15 @@
 import { Button } from "@workspace/ui/components/button";
 import { Crosshair } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 // import { FiCrosshair, FiMenu, FiSearch } from "react-icons/fi";
 
 const MainLayoutHeader = () => {
   return (
-    <header className="fixed top-0 w-full z-50 border-b border-white/5 bg-zinc-950/80 backdrop-blur-xs supports-[backdrop-filter]:bg-zinc-950/60">
+    <header className="backdrop-blur-xs fixed top-0 z-50 w-full border-b border-white/5 bg-zinc-950/80 supports-[backdrop-filter]:bg-zinc-950/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="mr-10 flex items-center gap-3">
+          <Link href="/" className="mr-10 flex items-center gap-3">
             <div className="bg-primary rounded-xs relative flex h-8 w-8 items-center justify-center text-white shadow-[0_0_15px_rgba(31,63,173,0.4)]">
               <Crosshair size={20} strokeWidth={2} />
               <div className="absolute -bottom-1 -right-1 h-2 w-2 bg-white/20"></div>
@@ -21,7 +22,7 @@ const MainLayoutHeader = () => {
                 Database
               </span>
             </div>
-          </div>
+          </Link>
 
           <nav className="hidden items-center gap-8 md:flex">
             <a

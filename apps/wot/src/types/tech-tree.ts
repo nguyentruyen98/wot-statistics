@@ -6,7 +6,7 @@ export type TankNode = {
   id: string | number;
   name: string;
   tier: number;
-  big_icon?: string;
+  big_icon_url?: string;
   type: TankTypes;
 };
 

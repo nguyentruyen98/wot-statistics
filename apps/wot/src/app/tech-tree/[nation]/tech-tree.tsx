@@ -10,9 +10,9 @@ import { buildTechTree } from "@/utils/tech-tree-builder";
 
 export function TechTree() {
   const { data, isLoading } = useTechTree(Nations.USSR);
-
   const techTreeData = useMemo(() => {
     if (!data) return { nodes: [], connections: [] };
+    console.log(data);
     return buildTechTree(data, ALL_BRANCHES_CONFIG, ALL_PATHS);
   }, [data]);
 

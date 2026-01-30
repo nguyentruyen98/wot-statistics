@@ -5,7 +5,7 @@ export class TankServices {
   private readonly baseUrl = "api/tanks";
 
   async getTechTree(nation: Nations): Promise<any> {
-    return apiClient.get(`${this.baseUrl}/${nation}`);
+    return apiClient.get(`${this.baseUrl}?nation=${nation}`);
   }
 }
 

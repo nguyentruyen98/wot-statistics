@@ -76,14 +76,18 @@ export default function Tank() {
           </div>
         </div>
 
-        <div className="grid flex-grow grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-24">
-          <div className="lg:min-h-auto group relative min-h-[40vh] lg:col-span-7">
-            <div className="absolute left-[50%] top-[40%] flex h-6 w-6 cursor-help items-center justify-center rounded-full border border-white/30 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-              <div className="h-1 w-1 rounded-full bg-white"></div>
-              <div className="pointer-events-none absolute top-full mt-2 w-32 rounded border border-white/10 bg-black/80 p-2 text-center text-[10px] text-zinc-300 backdrop-blur">
-                160mm Turret Armor
-              </div>
-            </div>
+        <div className="grid flex-grow grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-24 relative">
+          <img
+            className="h-3/4 w-auto object-contain absolute"
+            src="https://sg-wotp.wgcdn.co/dcont/tankopedia_images/r230_object_432u/r230_object_432u_image.png"
+            alt="Test"
+          />
+          <div className="lg:min-h-auto group relative flex min-h-[40vh] items-center justify-center lg:col-span-7">
+            {/* <img
+              className="h-3/4 w-auto object-contain"
+              src="https://sg-wotp.wgcdn.co/dcont/tankopedia_images/r230_object_432u/r230_object_432u_image.png"
+              alt="Test"
+            /> */}
           </div>
 
           <div className="flex flex-col justify-center pb-12 lg:col-span-5 lg:pb-32">
@@ -200,7 +204,6 @@ export default function Tank() {
                     </div>
                   </div>
                 </div>
-
                 <div className="col-span-2 mt-2 border-t border-white/5 pt-6">
                   <div className="mb-2 flex items-center gap-2 text-zinc-400">
                     <svg
@@ -265,8 +268,9 @@ export default function Tank() {
           </div>
         </div>
       </div>
-
       <div className="z-30 w-full border-t border-white/5 bg-zinc-950/90 backdrop-blur-md">
+        <div className="via-primary/50 absolute bottom-0 h-px w-full bg-gradient-to-r from-transparent to-transparent"></div>
+
         <div className="mx-auto max-w-[1600px] px-6 py-4 lg:px-8">
           <div className="flex items-center justify-between">
             <div className="no-scrollbar flex items-center gap-8 overflow-x-auto">
