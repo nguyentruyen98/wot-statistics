@@ -161,14 +161,14 @@ export default function TechTree({
 
       // Tìm vị trí y của nhánh main
       const mainIndex = sortedChildren.findIndex(c => c.branchType === "main");
-      let mainY =
+      let mainY: number =
         mainIndex >= 0
-          ? childYs[mainIndex]
+          ? (childYs[mainIndex] ?? currentY)
           : (childYs[childYs.length - 1] ?? currentY);
 
       // Nếu node này có rowGroup và rowGroup đã có Y, override mainY
       if (rowGroup && rowGroupYs[rowGroup] !== undefined) {
-        mainY = rowGroupYs[rowGroup];
+        mainY = rowGroupYs[rowGroup]!;
       } else if (rowGroup) {
         rowGroupYs[rowGroup] = mainY;
       }
@@ -218,7 +218,7 @@ export default function TechTree({
             const mainLinePositions = nodes
               .filter(n => mainLineNodes.has(n.id))
               .map(n => positions[n.id])
-              .filter(Boolean);
+              .filter((p): p is { x: number; y: number } => !!p);
 
             if (mainLinePositions.length === 0) return null;
 

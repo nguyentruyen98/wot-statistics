@@ -62,7 +62,7 @@ export default function TechTree() {
       return avgY;
     }
 
-    roots.forEach(root => layoutNode(root.id, 40));
+    roots.forEach(root => layoutNode(String(root.id), 40));
 
     return pos;
   }, []);
@@ -167,7 +167,7 @@ export default function TechTree() {
                 left: pos.x,
                 width: nodeWidth,
               }}
-              onMouseEnter={() => setHoveredId(node.id)}
+              onMouseEnter={() => setHoveredId(String(node.id))}
               onMouseLeave={() => setHoveredId(null)}
             >
               <Card className={"cursor-pointer rounded-sm py-2"}>

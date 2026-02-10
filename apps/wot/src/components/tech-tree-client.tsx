@@ -1,11 +1,12 @@
 "use client";
 
 import TechTree from "@/components/tech-tree";
-import { TechTreeLoading, TechTreeError } from "@/components/tech-tree-loading";
+import { TechTreeError,TechTreeLoading } from "@/components/tech-tree-loading";
+import { Nations } from "@/enums/common";
 import { useTechTree } from "@/hooks/use-tech-tree";
 
 export default function TechTreeClient() {
-  const { data, isLoading, error } = useTechTree('ussr', 'all');
+  const { data, isLoading, error } = useTechTree(Nations.USSR);
 
   if (isLoading) return <TechTreeLoading />;
   if (error) return <TechTreeError error={error} />;
@@ -17,4 +18,5 @@ export default function TechTreeClient() {
       <TechTree nodes={data.nodes} connections={data.connections} />
     </div>
   );
-}
+  }
+  
