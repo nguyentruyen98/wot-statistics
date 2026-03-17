@@ -12,7 +12,7 @@ type TechTreeHeaderProps = {
 export default function TechTreeHeader({ nation }: TechTreeHeaderProps) {
   return (
     <div className="flex items-center gap-4">
-      <NationalFlag nation={nation} sizes="sm" />
+      <NationalFlag nation={nation} size="sm" />
       <p className="text-3xl font-bold">{getNationName(nation)}</p>
     </div>
   );

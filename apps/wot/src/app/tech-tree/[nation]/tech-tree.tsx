@@ -8,11 +8,10 @@ import { Nations } from "@/enums/common";
 import { useTechTree } from "@/hooks/use-tech-tree";
 import { buildTechTree } from "@/utils/tech-tree-builder";
 
-export function TechTree() {
-  const { data, isLoading } = useTechTree(Nations.USSR);
+export function TechTree({ nation }: { nation: Nations }) {
+  const { data, isLoading } = useTechTree(nation);
   const techTreeData = useMemo(() => {
     if (!data) return { nodes: [], connections: [] };
-    console.log(data);
     return buildTechTree(data, ALL_BRANCHES_CONFIG, ALL_PATHS);
   }, [data]);
 

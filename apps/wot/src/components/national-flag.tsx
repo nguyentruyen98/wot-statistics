@@ -1,47 +1,48 @@
 import germanyFlag from "@public/images/nation-flag/germany.png";
 import ussrFlag from "@public/images/nation-flag/ussr.png";
-import { cva, VariantProps } from "class-variance-authority";
+import { cn } from "@workspace/ui/lib/utils";
+import { cva, type VariantProps } from "class-variance-authority";
+import type { StaticImageData } from "next/image";
 import Image from "next/image";
-import React from "react";
+import { memo } from "react";
 
 import { Nations } from "@/enums/common";
+import { getNationName } from "@/utils/common";
 
-const nationFlagVariants = cva("w-auto", {
-  variants: { sizes: { default: "", xs: "h-10", sm: "h-24", lg: "h-32" } },
-  defaultVariants: { sizes: "default" },
+const nationalFlagVariants = cva("w-auto", {
+  variants: {
+    size: { default: "", xs: "h-10", sm: "h-24", lg: "h-32" },
+  },
+  defaultVariants: { size: "default" },
 });
 
-export type NationalFlagProps = VariantProps<typeof nationFlagVariants> & {
-  nation: Nations;
+const FLAG_MAP: Partial<Record<Nations, StaticImageData>> = {
+  [Nations.USSR]: ussrFlag,
+  [Nations.GERMANY]: germanyFlag,
 };
 
-/**
- * Renders the national flag image for a given nation.
- *
- * Displays the appropriate flag based on the provided `nation` prop.
- * Currently supports USSR and Germany. Returns `null` if the nation is not supported.
- *
- * @param nation - The nation for which to display the flag.
- * @param sizes - The size variant(s) to apply to the flag image.
- * @returns The flag image for the specified nation, or `null` if not supported.
- */
-export default function NationalFlag({ nation, sizes }: NationalFlagProps) {
-  if (nation === Nations.USSR)
-    return (
-      <Image
-        src={ussrFlag}
-        alt="USSR Flag"
-        className={nationFlagVariants({ sizes })}
-      />
-    );
-  if (nation === Nations.GERMANY)
-    return (
-      <Image
-        src={germanyFlag}
-        alt="Germany Flag"
-        className={nationFlagVariants({ sizes })}
-      />
-    );
+export type NationalFlagProps = VariantProps<typeof nationalFlagVariants> & {
+  nation: Nations;
+  className?: string;
+};
 
-  return null;
-}
+const NationalFlag = memo(function NationalFlag({
+  nation,
+  size,
+  className,
+}: NationalFlagProps) {
+  const flag = FLAG_MAP[nation];
+  if (!flag) return null;
+
+  return (
+    <Image
+      data-slot="national-flag"
+      src={flag}
+      alt={`${getNationName(nation)} Flag`}
+      className={cn(nationalFlagVariants({ size }), className)}
+    />
+  );
+});
+
+export { nationalFlagVariants };
+export default NationalFlag;
