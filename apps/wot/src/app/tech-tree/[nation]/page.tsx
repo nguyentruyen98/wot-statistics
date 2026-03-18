@@ -4,6 +4,7 @@ import {
   QueryClient,
 } from "@tanstack/react-query";
 
+import TechTreeHeader from "@/components/tech-tree-header";
 import { QUERY_KEY } from "@/constants/query-key";
 import { Nations } from "@/enums/common";
 import { tankServices } from "@/services/tank-services";
@@ -25,10 +26,10 @@ export default async function TechTreePage({
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      {/* <TechTreeHeader nation={nation} /> */}
-      {/* <div className="flex flex-1 justify-center items-center"> */}
-      <TechTree nation={nation} />
-      {/* </div> */}
+      <div className="flex flex-col items-center justify-center py-20 gap-8">
+        <TechTreeHeader nation={nation} />
+        <TechTree nation={nation} />
+      </div>
     </HydrationBoundary>
   );
 }

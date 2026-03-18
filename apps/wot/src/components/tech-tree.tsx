@@ -189,10 +189,10 @@ export default function TechTree({
 
   return (
     <ScrollArea type="hover" className="h-2/3 w-3/4 border border-dashed">
-      {/* <DotPattern /> */}
+      <DotPattern />
       <div
         className="relative"
-        style={{ width: totalWidth, height: totalHeight }}
+        style={{ maxWidth: totalWidth, height: totalHeight }}
       >
         {/* Tier numbers header with Roman numerals */}
         {TANK_TIERS_ROMAN.map((roman, index) => (
@@ -210,7 +210,7 @@ export default function TechTree({
         ))}
 
         <svg
-          className="absolute left-0 top-0"
+          className="absolute top-0 left-0"
           style={{ width: totalWidth, height: totalHeight }}
         >
           {/* Background cho nhánh IS-7 */}
